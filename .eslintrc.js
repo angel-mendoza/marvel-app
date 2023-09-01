@@ -4,16 +4,22 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'prettier',
+    '@vue/typescript/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    semi: [2, 'never'],
+    quotes: ['error', 'single'],
+    'vue/require-default-prop': 0,
+    'vue/html-indent': ['error', 2],
+    'vue/singleline-html-element-content-newline': 0,
+    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
-};
+}
