@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import FavoritesView from '@/views/FavoritesView.vue'
+import SeriesDetailView from '@/views/SeriesDetailView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -12,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/favorites',
     name: 'Your favorites',
     component: FavoritesView
+  },
+  {
+    path: '/series/:id',
+    name: 'Detail serie',
+    component: SeriesDetailView,
   },
 ]
 

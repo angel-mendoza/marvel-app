@@ -1,7 +1,25 @@
 $bg-page: rgb(27 32 44 / 100%);
 $bg-navbar: rgb(27 32 44 / 70%);
+$bg-section: rgb(27 32 44 / 50%);
 $bg-article: rgb(39 46 60 / 100%);
+$bg-modal: rgb(39 46 60 / 93%);
 
 $font-color: #fff;
+$font-color-title: #aa69ef;
+$font-color-gray: #bbb;
 
 $border-radius-card: 4px;
+$border-radius-badge: 0.25rem;
+$border-radius-button: 1.25rem;
+
+$colors-badge: (
+  red: #dc3545,
+  blue: #007bff,
+  gray: #6c757d,
+);
+
+$colors-button: (
+  primary: #CC72E8,
+  secondary: #04BF8A,
+  gray: #6c757d,
+);

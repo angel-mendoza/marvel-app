@@ -1,8 +1,6 @@
 import * as CryptoJS from 'crypto-js'
 import axios from 'axios'
 
-import { Serie } from '@/interface/Serie'
-
 // Marvel API access keys
 const publicKey = process.env.VUE_APP_PUBLIC_KEY_MARVEL
 const privateKey = process.env.VUE_APP_PRIVATE_KEY_MARVEL
@@ -12,7 +10,7 @@ const marvelApi = axios.create({
   baseURL: 'https://gateway.marvel.com/v1/public',
 })
 
-async function getSeriesPage(url: string , page: number): Promise<Serie[]> {
+async function getSeriesPage(url: string , page: number) {
   const timestamp = Date.now().toString()
   const hash = CryptoJS.MD5(`${timestamp}${privateKey}${publicKey}`)
   const pageSize = 20

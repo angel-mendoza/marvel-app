@@ -16,6 +16,7 @@ export interface Serie {
   comics: Comic,
   next: RelatedSeries | null
   previous: RelatedSeries | null
+  name?: string
 }
 
 export interface RelatedSeries {
@@ -58,6 +59,7 @@ export interface Thumbnail {
 }
 
 export interface Creator extends Item {
+  available: number,
   items: ItemCreator[],
 }
 
