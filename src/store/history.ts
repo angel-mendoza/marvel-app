@@ -27,12 +27,10 @@ export const useHistoryStore = defineStore('history', {
       this.scroll = data
     },
     addFavorites (data: number) {
-      console.log('addFavorites')
       const arrFavorites = [...this.favorites, data]
       this.favorites = arrFavorites
     },
     removeFavorites (data: number){
-      console.log('removeFavorites')
       const arrFavorites = [...this.favorites]
       const arrFavoritesFilter = arrFavorites.filter(item => item !== data)
       this.favorites= arrFavoritesFilter
