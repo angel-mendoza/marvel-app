@@ -1,29 +1,33 @@
-# marvel-app
+
+# Marvel App
+
+This project was created for the purpose of conducting the technical test for Tipti company
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+#### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
+#### Lints and fixes files
 ```
 npm run lint
 ```
+## technologies used
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- [Vue](https://vuejs.org/)
+- [Vue-cli](https://cli.vuejs.org/guide/)
+- [Pinia](https://pinia.vuejs.org/)
+- [pinia-plugin-persistedstate](https://github.com/prazdevs/pinia-plugin-persistedstate)
+- [Sass](https://sass-lang.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Fontawesome](https://fontawesome.com/)
